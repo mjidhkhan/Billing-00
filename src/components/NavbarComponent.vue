@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-900 
+  <div class="bg-gray-800  fixed w-full z-10
               sm:flex sm:justify-between 
               sm:items-center sm:px-4 sm:py-3">
       <div class="flex items-center justify-between 

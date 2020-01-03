@@ -8,7 +8,7 @@
 					<img class="h-10" 
 						src="/img/logo.svg" 
 						alt="Workcation">
-					<img class="mt-6 rounded-lg shadow-xl sm:mt-8 sm:h-72  
+					<img class="mt-6 rounded-lg shadow-xl sm:mt-8 sm:h-72 
 								sm:w-full sm:object-cover sm:object-center lg:hidden" 
 								src="/img/beach-work.jpg" 
 								alt="Woman workcationing on the beach">
@@ -35,7 +35,7 @@
 			</div>
 			<div class="hidden lg:block lg:w-1/2 lg:relative 
 							sm:bg-gray-100 lg:bg-primary-200 bg-white">
-				<img class="absolute inset-0 h-full w-full object-cover object-center" 
+				<img class=" py-12 absolute inset-0  h-full w-full object-cover object-center" 
 							src="/img/beach-work.jpg " 
 							alt="Woman workcationing on the beach">
 			</div>
