@@ -34,26 +34,36 @@
       <nav :class="isOpen ? 'block' : 'hidden'" class="sm:block">
         <div class="border-t border-teal-800 sm:border-t-0">
         <div class=" px-2 pt-2 pb-4 sm:flex sm:p-0  z-20">
-          <a href="#" 
-              class="block px-2 py-1 text-gray-500 focus:text-white font-semibold 
+          <router-link to="/home" 
+              class="cursor-pointer block px-2 py-1 text-gray-500 focus:text-white font-semibold 
+                      rounded hover:bg-gray-800 hover:text-gray-100 focus:bg-gray-700">
+              Home
+          </router-link>
+          <router-link to="destinations" 
+              class="cursor-pointer block px-2 py-1 text-gray-500 focus:text-white font-semibold 
+                      rounded hover:bg-gray-800 hover:text-gray-100 focus:bg-gray-700">
+              Destinations
+          </router-link>
+          <router-link to="properties" 
+              class="cursor-pointer block px-2 py-1 text-gray-500 focus:text-white font-semibold 
                       rounded hover:bg-gray-800 hover:text-gray-100 focus:bg-gray-700">
               Properties
-          </a>
-          <a href="#" 
-              class="mt-1 block px-2 py-1 text-gray-500 focus:text-white font-semibold 
+          </router-link>
+          <router-link to="trips" 
+              class="cursor-pointer mt-1 block px-2 py-1 text-gray-500 focus:text-white font-semibold 
                       rounded hover:bg-gray-800 hover:text-gray-100 focus:bg-gray-700 sm:mt-0 sm:ml-2">
               Trips
-          </a>
-          <a href="#" 
-              class="mt-1 block px-2 py-1 text-gray-500 focus:text-white font-semibold 
+          </router-link>
+          <router-link to="review" 
+              class="cursor-pointer mt-1 block px-2 py-1 text-gray-500 focus:text-white font-semibold 
                       rounded hover:bg-gray-800 hover:text-gray-100 focus:bg-gray-700 sm:mt-0 sm:ml-2">
-              Messages
-          </a>
-          <a v-if="!isLogin" href="#" 
-              class="mt-1 block px-2 py-1 text-gray-500 focus:text-white font-semibold 
+              Reviews
+          </router-link>
+          <router-link v-if="!isLogin" to="login" 
+              class=" cursor-pointer mt-1 block px-2 py-1 text-gray-500 focus:text-white font-semibold 
                       rounded hover:bg-gray-800 hover:text-gray-100 focus:bg-gray-700 sm:mt-0 sm:ml-2">
               Login
-          </a>
+          </router-link>
           <AccountDropdown v-if="isLogin" class="hidden sm:block sm:ml-6"/>
         </div>
         </div>
@@ -66,9 +76,9 @@
             <span class="ml-3 font-semibold text-white">Jane Doe</span>
           </div>
           <div class="mt-4">
-            <a href="#" class="block text-gray-600 hover:text-white ">Account settings</a>
-            <a href="#" class="mt-2 block text-gray-600 hover:text-white ">Support</a>
-            <a href="#" class="mt-2 block text-gray-600 hover:text-white ">Sign out</a>
+            <router-link to="settings" class="block text-gray-600 hover:text-white ">Account settings</router-link >
+            <router-link  to="support" class="mt-2 block text-gray-600 hover:text-white ">Support</router-link >
+            <router-link  to="signout" class="mt-2 block text-gray-600 hover:text-white ">Sign out</router-link >
           </div>
       </div>
     </nav>
@@ -76,7 +86,7 @@
 </template>
 
 <script>
-import AccountDropdown from './AccountDropdown'
+import AccountDropdown from './AccountDropdownComponent'
 export default {
   components: {
     AccountDropdown,

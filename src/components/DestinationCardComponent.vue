@@ -1,5 +1,6 @@
 <template>
   <div class="flex items-center rounded-lg bg-white shadow-lg overflow-hidden ">
+  
     <img class="h-32 w-32 md:object-cover  sm:object-cover sm:object-center md:object-center  flex-shrink-0 h-full" :src="destination.imageUrl" :alt="destination.imageAlt">
     <div class="px-6 py-4">
       <h3 class="text-lg font-semibold text-gray-800">{{ destination.city }} </h3>
@@ -16,3 +17,4 @@ export default {
   props: ['destination'],
 }
 </script>
+

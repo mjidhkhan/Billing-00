@@ -1,4 +1,4 @@
-let data= ()=>{
+  let data= ()=>{
     return {
       popularDestinations: [
         {
@@ -48,7 +48,7 @@ let data= ()=>{
         {
           id: 1,
           imageUrl: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-          imageAlt: 'Rear view of modern home with pool',
+          imageAlt: 'Modern home in city center',
           beds: 3,
           baths: 2,
           title: "Modern home in city center",
@@ -60,7 +60,7 @@ let data= ()=>{
         {
           id: 2,
           imageUrl: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-          imageAlt: 'Rear view of modern home with pool',
+          imageAlt: 'Modern home in city center',
           beds: 3,
           baths: 2,
           title: "Modern home in city center",
@@ -72,7 +72,7 @@ let data= ()=>{
         {
           id: 3,
           imageUrl: 'https://images.unsplash.com/photo-1475855581690-80accde3ae2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-          imageAlt: 'Rear view of modern home with pool',
+          imageAlt: 'Modern home in country side',
           beds: 3,
           baths: 2,
           title: "Modern home in country side",
@@ -84,7 +84,7 @@ let data= ()=>{
         {
           id: 4,
           imageUrl: 'https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-          imageAlt: 'Rear view of modern home with pool',
+          imageAlt: 'Modern home in natural resort',
           beds: 3,
           baths: 2,
           title: "Modern home in natural resort",
@@ -92,6 +92,43 @@ let data= ()=>{
           formattedPrice: "$1,300.00",
           reviewCount: 34,
           rating: 3,
+        }
+      ],
+      popularReviews: [
+        {
+          id: 1,
+          property: 'Modern home in city center',
+          imageUrl: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+          text: 'Modern home in city center',
+          reviewCount: 35,
+          rating: 4,
+        },
+        {
+          id: 2,
+          property: 'Modern home in town',
+          imageUrl: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+          text: 'Modern home in city center',
+          reviewCount: 39,
+          rating: 4,
+          
+        },
+        {
+          id: 3,
+           property: 'Modern home in country side',
+          imageUrl: 'https://images.unsplash.com/photo-1475855581690-80accde3ae2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+          text: 'Modern home in country side',
+          reviewCount: 34,
+          rating: 3,
+          
+        },
+        {
+          id: 4,
+          property: 'Modern home in natural resort',
+          imageUrl: 'https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+          text: 'Modern home in natural resort',
+          reviewCount: 34,
+          rating: 3,
+         
         }
       ],
     }
